@@ -6,7 +6,7 @@ public abstract class MesoAbstract
 {
 	//Abstract method calAverage to return integer array.
 	abstract int[] calAverage();
-
+	abstract char letterAverage();
 	//TODO: Create an abstract method letterAverage with return type char
 	
 }

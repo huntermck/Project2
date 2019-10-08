@@ -32,7 +32,7 @@ public class MesoInherit extends MesoAbstract {
 
 	public int[] calAverage() {
 		return averagesValueList;
-		
+		// TODO implement calAverage
 	}
 	
 	public static void main(String[] args) {
