@@ -2,13 +2,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class MesoInherit extends MesoAbstract {
-	
+
 	// Class variables.
 	public static int[] asciiCodes = new int[4];
 	double asciiAverage = 0.0;
 
 	// Creates array to return average list.
-	int[] averagesValueList = new int[3];
+	int[] averageValueList = new int[3];
 
 	public MesoInherit(MesoStation mesoStation) throws IOException {
 		// Fetches station ID.
@@ -31,12 +31,40 @@ public class MesoInherit extends MesoAbstract {
 	}
 
 	public int[] calAverage() {
-		return averagesValueList;
-		// TODO implement calAverage
-	}
-	
-	public static void main(String[] args) {
+		// Initialization of avg value.
+		Double asciiTotal = 0.0;
 
+		// For loop that uses ascii values from mesoStation and finds the sum.
+		for (int i = 0; i < 4; i++) {
+			asciiTotal += asciiCodes[i];
+		}
+
+		// Divides total value by 4 to find average.
+		asciiAverage = asciiTotal / 4;
+
+		// Assigns average value to final index in array.
+		averageValueList[2] = (int) Math.round(asciiAverage);
+
+		// Initialization of ascii ceiling value.
+		int asciiCeiling = 0;
+		asciiCeiling = (int) Math.round(asciiAverage);
+
+		// Assigns ceiling value to first index of array.
+		averageValueList[0] = asciiCeiling;
+
+		// Initialization of ascii floor value.
+		int asciiFloor = 0;
+		asciiFloor = (int) asciiAverage;
+
+		// Assigns floor value to second index of array.
+		averageValueList[1] = asciiFloor;
+
+		// Returns averageValueList array.
+		return averageValueList;
+	}
+
+	public char letterAverage() {
+		return (char) averageValueList[2];
 	}
 
 }
