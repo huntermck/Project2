@@ -1,6 +1,8 @@
+import java.util.ArrayList;
 
 public class LetterAvg {
-
+	ArrayList<String> avgLetterStations = new ArrayList<String>();
+	
 	public LetterAvg(char letterAverage) {
 		// TODO Auto-generated constructor stub
 	}
@@ -11,15 +13,10 @@ public class LetterAvg {
 			if (i < (avgLetterStations.size()) -1) {
 				mesoOutput += avgLetterStations.get(i) + "\n";
 			} else {
-				mesoOuput += avgLetterStations.get(i);
+				mesoOutput += avgLetterStations.get(i);
 			}
 		}
 		return mesoOutput;
-	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 	public String numberOfStationWithLetterAvg() {
