@@ -46,18 +46,18 @@ public class MesoInherit extends MesoAbstract {
 		averageValueList[2] = (int) Math.round(asciiAverage);
 
 		// Initialization of ascii ceiling value.
-		int asciiCeiling = 0;
-		asciiCeiling = (int) Math.round(asciiAverage);
+		int asciiTop = 0;
+		asciiTop = (int) Math.round(asciiAverage);
 
 		// Assigns ceiling value to first index of array.
-		averageValueList[0] = asciiCeiling;
+		averageValueList[0] = asciiTop;
 
 		// Initialization of ascii floor value.
-		int asciiFloor = 0;
-		asciiFloor = (int) asciiAverage;
+		int asciiBottom = 0;
+		asciiBottom = (int) asciiAverage;
 
 		// Assigns floor value to second index of array.
-		averageValueList[1] = asciiFloor;
+		averageValueList[1] = asciiBottom;
 
 		// Returns averageValueList array.
 		return averageValueList;

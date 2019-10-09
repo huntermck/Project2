@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.ArrayList;
 
 public class PosAvg {
@@ -9,7 +12,7 @@ public class PosAvg {
 	
 	// Default.
 	public PosAvg() {
-		
+
 	}
 	
 	public PosAvg(String str) {
@@ -29,8 +32,8 @@ public class PosAvg {
 	}
 	
 	// Reads in MesoNet.txt.
-	public void readFile(String fileName) {
-		// TODO
+	public void readFile(String fileName) throws FileNotFoundException {
+		BufferedReader br = new BufferedReader(new FileReader("Mesonet.txt"));
 	}
 	
 	public static void main(String[] args) {
