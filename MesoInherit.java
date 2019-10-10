@@ -3,6 +3,9 @@ import java.io.IOException;
 
 public class MesoInherit extends MesoAbstract {
 
+	// Test variables for output.
+	private int letterAverageTemp = 73;
+	
 	// Class variables.
 	public static int[] asciiCodes = new int[4];
 	double asciiAverage = 0.0;
@@ -64,7 +67,8 @@ public class MesoInherit extends MesoAbstract {
 	}
 
 	public char letterAverage() {
-		return (char) averageValueList[2];
+		//return (char) averageValueList[2];
+		return (char) letterAverageTemp;
 	}
 
 }
