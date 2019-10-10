@@ -40,9 +40,7 @@ public class PosAvg {
 		BufferedReader br = new BufferedReader(new FileReader("Mesonet.txt"));
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public void main(String[] args) {
+		posAvg();
 	}
-
 }
