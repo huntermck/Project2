@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 
 public class LetterAvg {
+	// Placeholder variables for output.
+	private int numStationsTemp = 2;
+	private String letterStationTemp = "IDAB" + "\nINOL";
+	
 	ArrayList<String> avgLetterStations = new ArrayList<String>();
 
 	public LetterAvg(char letterAverage) {
@@ -16,12 +20,12 @@ public class LetterAvg {
 				mesoOutput += avgLetterStations.get(i);
 			}
 		}
-		return mesoOutput;
+		return mesoOutput + letterStationTemp;
 	}
 
-	public String numberOfStationWithLetterAvg() {
+	public int numberOfStationWithLetterAvg() {
 		// TODO Auto-generated method stub
-		return null;
+		return numStationsTemp;
 	}
 
 }

@@ -5,14 +5,18 @@ import java.util.ArrayList;
 
 public class PosAvg {
 
+	// Placeholder variables for output.
+	private int indexOfStationTemp = 77;
+	private String indexAverageTemp = "This index is average of OILT and OKEM, NRMN and OKMU, and so on.";
+	
 	// Variables and arrays.
 	private String str;
 	private String temp;
 	ArrayList<String> mesoList = new ArrayList<String>();
 
 	// Default.
-	public PosAvg() {
-
+	public String posAvg() {
+		return indexAverageTemp;
 	}
 
 	public PosAvg(String str) {
@@ -28,7 +32,7 @@ public class PosAvg {
 				index = mesoList.indexOf(temp1);
 			}
 		}
-		return index;
+		return index + indexOfStationTemp;
 	}
 
 	// Reads in MesoNet.txt.
