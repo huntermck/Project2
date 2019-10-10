@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class PosAvg {
 
 	// Placeholder variables for output.
-	private int indexOfStationTemp = 77;
+	private int indexOfStationTemp = 79;
 	private String indexAverageTemp = "This index is average of OILT and OKEM, NRMN and OKMU, and so on.";
 	
 	// Variables and arrays.
@@ -40,7 +40,7 @@ public class PosAvg {
 		BufferedReader br = new BufferedReader(new FileReader("Mesonet.txt"));
 	}
 
-	public void main(String[] args) {
+	public PosAvg(String[] args) {
 		posAvg();
 	}
 }
