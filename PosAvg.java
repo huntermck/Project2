@@ -14,11 +14,6 @@ public class PosAvg {
 	private String temp;
 	ArrayList<String> mesoList = new ArrayList<String>();
 
-	// Default.
-	public String posAvg() {
-		return indexAverageTemp;
-	}
-
 	public PosAvg(String str) {
 		this.str = str;
 	}
@@ -39,8 +34,8 @@ public class PosAvg {
 	public void readFile(String fileName) throws FileNotFoundException {
 		BufferedReader br = new BufferedReader(new FileReader("Mesonet.txt"));
 	}
-
-	public PosAvg(String[] args) {
-		posAvg();
+	
+	public String toString() {
+		return indexAverageTemp;
 	}
 }
