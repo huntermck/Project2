@@ -27,7 +27,8 @@ public class PosAvg {
 			stationMatch = mesoList2[i];
 			if (str.equals(stationMatch)) {
 //				index = mesoList.indexOf(stationMatch);
-				index
+//				index += stationMatch;
+				
 			}
 		}
 		return index + indexOfStationTemp;
@@ -36,6 +37,7 @@ public class PosAvg {
 	// Reads in MesoNet.txt.
 	public void readFile(String fileName) throws FileNotFoundException {
 		BufferedReader br = new BufferedReader(new FileReader("Mesonet.txt"));
+		
 	}
 	
 	public String toString() {
