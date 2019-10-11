@@ -33,7 +33,6 @@ public class PosAvg {
 	// Reads in MesoNet.txt.
 	public void readFile(String fileName) throws FileNotFoundException {
 		BufferedReader br = new BufferedReader(new FileReader("Mesonet.txt"));
-		mesoList = br.readLine();
 	}
 	
 	public String toString() {
