@@ -12,19 +12,22 @@ public class PosAvg {
 	// Variables and arrays.
 	private String str;
 	private String temp;
-	ArrayList<String> mesoList = new ArrayList<String>();
+//	ArrayList<String> mesoList = new ArrayList<String>();
+	String[] mesoList2 = new String[120];
 
 	public PosAvg(String str) {
 		this.str = str;
 	}
 
 	public int indexOfStation() {
-		String temp1 = "";
+		String stationMatch = "";
 		int index = 0;
-		for (int i = 0; i < mesoList.size(); ++i) {
-			temp1 = mesoList.get(i);
-			if (str.equals(temp1)) {
-				index = mesoList.indexOf(temp1);
+		for (int i = 0; i < mesoList2.length; ++i) {
+//			stationMatch = mesoList.get(i);
+			stationMatch = mesoList2[i];
+			if (str.equals(stationMatch)) {
+//				index = mesoList.indexOf(stationMatch);
+				index
 			}
 		}
 		return index + indexOfStationTemp;
