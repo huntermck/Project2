@@ -12,22 +12,24 @@ public class PosAvg {
 	// Variables and arrays.
 	private String str;
 	private String temp;
-//	ArrayList<String> mesoList = new ArrayList<String>();
+	ArrayList<String> mesoList = new ArrayList<String>();
 	String[] mesoList2 = new String[120];
+	
+	// Testing variables
+	String stID = "OKCE";
 
 	public PosAvg(String str) {
 		this.str = str;
 	}
 
 	public int indexOfStation() {
-		String stationMatch = "";
 		int index = 0;
-		for (int i = 0; i < mesoList2.length; ++i) {
+		for (int i = 0; i < mesoList.size(); ++i) {
 //			stationMatch = mesoList.get(i);
-			stationMatch = mesoList2[i];
-			if (str.equals(stationMatch)) {
+			String stationMatch = mesoList.get(i);
+			if (stationMatch.equals(stID)) {
 //				index = mesoList.indexOf(stationMatch);
-//				index += stationMatch;
+				index = i;
 				
 			}
 		}
@@ -41,6 +43,13 @@ public class PosAvg {
 	}
 	
 	public String toString() {
+//		String stat2Below = file.get(indexOfStation() - 2);
+//		String stat1Below = file.get(indexOfStation() - 1);
+//		String stat1Above = file.get(indexOfStation() + 1);
+//		String stat2Above = file.get(indexOfStation() + 2);
+//		
+//		return String.format("This index is average of ", arg1);
+		
 		return indexAverageTemp;
 	}
 }
